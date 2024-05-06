@@ -47,13 +47,12 @@
     color: #1e1e1e;
     border-radius: 30px;
     text-decoration: none;
+    font-family: pr;
+    font-size: 16px;
+    padding: 8px 25px;
 }
 
-.contact-btn:hover {
-    border: 1px solid white;
-    transition: .5s;
-    color: white;
-}
+
 
 .navbar-toggler {
     color: white;
@@ -84,6 +83,8 @@
     margin-right: 15px;
 }
 
+/* banner styling */
+
 .banner-main {
     position: absolute;
 }
@@ -107,8 +108,8 @@
     bottom: 150px;
 }
 
-.carousel-caption h5 {
-    font-size: 45;
+.carousel-caption h1 {
+    font-size: 35;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 25px;
@@ -116,28 +117,48 @@
     margin-bottom: 10px;
     color: white;
 }
+.carousel-caption h6{
+    font-family: pr;
+    color: white;
+    font-size: 20px;
+}
 
 .carousel-caption p {
     width: 100%;
     margin: auto;
     font-size: 15px;
     line-height: 1.3;
-
+    font-family: pr;
 }
 
-.carousel-caption a {
+.btn {
     /* text-transform: uppercase; */
     padding: 8px 25px;
     margin-top: 20px;
     font-family: cdm;
     font-size: 18px;
     color: #1e1e1e;
+    background-color: white;
+    border-radius: 30px;
 }
 
 .carousel-caption a:hover {
     border: 1px solid white;
     transition: .5s;
     color: white;
+}
+.image-with-overlay {
+    position: relative;
+    display: inline-block; /* Ensures the overlay only covers the image */
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.301); /* Semi-transparent black color */
 }
 
 .sub-header {

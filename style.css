@@ -394,81 +394,6 @@
 }
 
 /* service section */
-.card {
-    width: 300px;
-}
-
-.card img {
-    height: 400px;
-    object-fit: fill;
-}
-
-.card-body {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    font-family: cdr;
-    line-height: 20px;
-    /* height: 400px; */
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.07));
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    overflow: hidden;
-    /* Hide overflow content */
-    height: 0;
-    /* Initially set height to 0 */
-    transition: height 0.5s ease;
-    /* Smooth transition for height */
-}
-
-.card-body:hover {
-    height: auto;
-    /* Expand height on hover to show content */
-}
-
-.card-title {
-    font-size: 23px;
-    font-family: cdm;
-}
-
-.card-text {
-    font-size: 15px;
-    opacity: 80%;
-}
-
-.card-wrappper {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-@media (max-width: 576px) {
-    .card {
-        width: 100%;
-    }
-}
-
-/* Media query for medium devices */
-@media (min-width: 576px) {
-    .card {
-        width: calc(50% - 1rem);
-    }
-}
-
-/* Media query for large devices */
-@media (min-width: 992px) {
-    .card {
-        width: calc(33.3333% - 1rem);
-    }
-}
-
-/* Media query for extra large devices */
-@media (min-width: 1200px) {
-    .card {
-        width: calc(25% - 1rem);
-    }
-}
 
 /* GALLERY CODE STYLING */
 
@@ -483,7 +408,6 @@
 
 .flex-container>div {
     border-radius: 5px;
-
     padding: 8px;
 }
 

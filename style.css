@@ -32,7 +32,9 @@
     font-family: cdm;
     font-size: 16px;
 }
-
+.navbar-nav .nav-link {
+    color: white; 
+}
 .navbar-brand {
     width: 80px;
 }
@@ -58,7 +60,26 @@
 }
 
 
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease; 
+}
+.offcanvas-title img{
+    width: 80px;
+}
 
+.navbar-nav .nav-link {
+    color: black; 
+}
+
+.navbar-scrolled {
+    background-color: white; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-scrolled .navbar-nav .nav-link {
+    color: black; 
+}
 .navbar-toggler {
     color: white;
     border: none;
@@ -371,29 +392,11 @@
 
 /* service deisgn */
 
-.card-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
 
-.service-header {
-    text-align: center;
-    font-family: cdm;
-    color: var(--primary-color);
 
-}
 
-.service-slider {
-    margin-top: 30px;
-}
+ 
 
-.about-container {
-    padding: 100px 0px;
-}
-
-/* service section */
 
 /* GALLERY CODE STYLING */
 
@@ -468,6 +471,9 @@
         object-fit: cover;
     }
 }
+.gallery-container{
+    padding: 150px 0 50px;
+}
 
 .gallery-btn a {
     padding: 8px 0px;
@@ -482,6 +488,7 @@
 .gallery-btn {
     display: flex;
     justify-content: center;
+    margin-top: -20px;
     /* Horizontally center the content */
     align-items: center;
     /* Vertically center the content */
@@ -497,6 +504,18 @@
 
 .testimonial-container {
     text-align: center;
+}
+.testimonial-btn a{
+    text-decoration: none;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: .4s;    
+}
+.testimonial-btn a:hover{
+    background-color: var(--secondary-color);
 }
 
 .testimonial-main {
@@ -675,5 +694,78 @@
 @media (max-width: 576px) {
     .footer-logo img {
         max-width: 80px; /* Adjust logo size as needed */
+    }
+}
+
+
+/*  */
+/* about page design */
+/*  */
+
+.about-banner-image{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-image: url(Assets/Images/aboutbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about-banner-image h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    font-family: cdb;
+    letter-spacing: 3px;
+}
+.about-banner-image img{
+    width: 100%;
+    object-fit: contain;
+}
+.about-banner-image h1{
+    z-index: 3;
+}
+.about-page-discription p span{
+    font-size: 23px;
+    font-weight: 600;
+    font-family: cdm;
+}
+.about-page-discription p{
+    font-size: 18px;
+    line-height: 27px;
+    font-family: pr;
+}
+.about-page-discription{
+    text-align: left;
+    width: 60%;
+}
+.about-page-content{
+    padding: 100px 0px;
+}
+@media (max-width:1024px) {
+    .about-page-discription{
+        text-align: left;
+        width: 100%;
+    }
+}
+@media (max-width:470px) {
+    .about-page-discription{
+        text-align: center;
+        width: 100%;
+    }
+    .about-page-discription span{
+        font-size: 18px;
+    }
+    .about-page-discription p{
+        font-size: 15px;
+        line-height: 27px;
+    }
+    .about-banner-image h1{
+        font-size: 30px;
+        font-family: cdm;
     }
 }

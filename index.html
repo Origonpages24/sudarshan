@@ -19,9 +19,10 @@
         <div class="container navbar-elements">
             <a class="navbar-brand me-auto" href="#"><img src="Assets\Images\logo.png" alt="logo"></a>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
+                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">   <a class="navbar-brand me-auto" href="#"><img src="Assets\Images\logo.png" alt="logo"></a></h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> <a class="navbar-brand me-auto" href="#"><img
+                                    src="Assets\Images\logo.png" alt="logo"></a></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -33,14 +34,15 @@
                             <a class="nav-link" href="aboutus.html">About Us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="service.html" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="service.html" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
                                 Service
                             </a>
                             <ul class="dropdown-menu service-list">
-                                <li><a class="dropdown-item" href="service.html">International & Domestic Packages</a></li>
+                                <li><a class="dropdown-item" href="service.html">International & Domestic Packages</a>
+                                </li>
                                 <li><a class="dropdown-item" href="#">Honeymoon Packages</a></li>
-
+    
                                 <li><a class="dropdown-item" href="#">Pilgrimage Packages</a></li>
                                 <li><a class="dropdown-item" href="#">Destination Wedding Packages</a></li>
                             </ul>
@@ -49,19 +51,46 @@
                             <a class="nav-link" href="testimonial.html">Testimonials</a>
                         </li>
                         <li class="nav-item">
+    
                             <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
                     </ul>
-
+    
                 </div>
             </div>
+            <!-- Button to trigger the modal -->
             <div class="contact-search">
-                <a href="" class="search"><i class="bi bi-search"></i></a>
-                <a href="#" class=" contact-btn">Contact Us</a>
-
+                <button type="button" id="openContact">Contact Us</button>
             </div>
+            <div class="contact-overlay" id="contactOverlay">
+                <div class="contact-overlay-content">
+                    <div class="contact-overlay-header">
+                        <h4>Contact Us</h4>
+                    </div>
+                    <div class="contact-overlay-form">
+                        <input type="email" name="" placeholder="Enter Email" id="">
+                        <br><br>
+                        <input type="text" placeholder="Phone Number" id="">
+                        <br>
+                        <br>
+                        <textarea name="" id="" cols="23" rows="5" placeholder="Message"></textarea>
+                        <br> <br>
+                        <input type="button"
+                               style="background-color: var(--primary-color);
+                                    font-size: 15px;
+                                    color: white;
+                                    border: none;
+                                    outline: none;
+                                    width: 100px;
+                                    text-align: center;
+                                    " value="Submit" id="submitContact">
+                    </div>
+                </div>
+            </div>
+    
+    
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
@@ -77,6 +106,8 @@
                 aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -90,7 +121,7 @@
                         cultural immersion, or a destination wedding of your dreams we're here to turn your aspirations
                         into reality.
                     </p>
-                    <a href="#" class="btn">Read More</a>
+                    <a href="aboutus.html" class="btn">Read More</a>
                 </div>
             </div>
             <div class="carousel-item">
@@ -103,7 +134,7 @@
                         crafted itineraries cater to every traveller's desires, ensuring a seamless and unforgettable
                         experience from start to finish.
                     </p>
-                    <a href="#" class="btn">Read More</a>
+                    <a href="aboutus.html" class="btn">Read More</a>
                 </div>
             </div>
             <div class="carousel-item">
@@ -117,7 +148,22 @@
                         excellence means you can expect nothing less than impeccable service, attention to detail, and
                         unwavering support throughout your journey.
                     </p>
-                    <a href="#" class="btn">Read More</a>
+                    <a href="aboutus.html" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Assets\Images\banner_4.jpg" class="d-block w-100" alt="...">
+                <div class="image-overlay"></div>
+                <div class="carousel-caption">
+                    <h1>Your Adventure Begins Here</h1>
+                    <p>Whether you're embarking on your first solo trip, celebrating a milestone occasion, or simply
+                        craving a change of scenery, Sudarshan Holidays is here to make your travel dreams come true. So
+                        why wait? Join us and embark on the adventure of a lifetime. Your journey starts now with
+                        Sudarshan Holidays.
+
+                    </p>
+                    <a href="aboutus.html" class="btn">Read More</a>
                 </div>
             </div>
         </div>
@@ -185,7 +231,7 @@
                             for you and your partner. Experience the spiritual essence with our pilgrimages, offering a
                             transformative journey
                         </p>
-                        <a href="#" class="about-btn btn">Read More</a>
+                        <a href="aboutus.html" class="about-btn btn">Read More</a>
                     </div>
                 </div>
 
@@ -196,9 +242,9 @@
     <!-- end about us  -->
 
     <!-- Serives -->
-   
 
-    
+
+
     <!-- end of service -->
 
     <!-- gallery section -->
@@ -228,12 +274,12 @@
                 </div>
             </div>
             <div class="item3">
-                <img src="Assets\Images\maldievs.jpg" alt="">
+                <img src="Assets\Images\destinationwedding(2).jpg" alt="">
             </div>
 
         </div>
-        <div class="gallery-btn btn">
-            <a href="#">View More <i class="bi bi-caret-right"></i></a>
+        <div class="gallery-btn ">
+            <a href="gallery.html">View More <i class="bi bi-caret-right"></i></a>
         </div>
     </section>
     <!-- gallery ending -->
@@ -247,18 +293,21 @@
             </div>
 
             <div class="container testimonial-cards">
-                <div class="row testimonial-card-wrapper">
+                <div class="row testimonial-card-wrapper " style="margin: auto;">
                     <div class="col">
 
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 20rem;">
                             <div class="card-profile">
-                                <img src="Assets\Images\profile.jpg" alt="">
+                                <img src="Assets\Images\client1saju.jpeg" alt="clent_1">
                             </div>
                             <div class="card-details">
 
-                                <h6 class="card-subtitle mb-2 text-muted">Samuael John</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Saju K.P</h6>
+                                <p class="card-text">"I can't thank Sudarshan Holidays enough for the incredible journey
+                                    they provided. From the breathtaking landscapes to the immersive cultural
+                                    experiences, every aspect of our trip was carefully curated to perfection. Their
+                                    passion for travel shines through in everything they do, and I'm already planning my
+                                    next adventure with Sudarshan Holidays!"</p>
 
                             </div>
                             <div class="review-star">
@@ -271,15 +320,18 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 20rem;">
                             <div class="card-profile">
-                                <img src="Assets\Images\profile.jpg" alt="">
+                                <img src="Assets\Images\client3Anusree.jpg" alt="">
                             </div>
                             <div class="card-details">
 
-                                <h6 class="card-subtitle mb-2 text-muted">Samuael John</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Anusree Dinesh</h6>
+                                <p class="card-text">"Sudarshan Holidays exceeded all of our expectations! From the
+                                    moment we arrived, we were greeted with warmth and hospitality. Their knowledgeable
+                                    guides provided fascinating insights into each destination, and the seamless
+                                    logistics made our trip stress-free. Without a doubt, Sudarshan Holidays is the only
+                                    company I'll trust with my travel plans."</p>
 
                             </div>
                             <div class="review-star">
@@ -292,15 +344,17 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 20rem;">
                             <div class="card-profile">
                                 <img src="Assets\Images\profile.jpg" alt="">
                             </div>
                             <div class="card-details">
 
-                                <h6 class="card-subtitle mb-2 text-muted">Samuael John</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Venkatesh Thyagarajan</h6>
+                                <p class="card-text">"Sudarshan Holidays truly made our vacation unforgettable! Every
+                                    detail was meticulously planned from the seamless booking process to the expertly
+                                    crafted itinerary. Their personalised approach ensured that our trip exceeded all
+                                    expectations. We can't wait to book our next adventure with Sudarshan Holidays!"</p>
 
                             </div>
                             <div class="review-star">
@@ -314,8 +368,8 @@
                     </div>
                 </div>
             </div>
-            <div class="testimonial-btn btn">
-                <a href="#"> Read More</a>
+            <div class="testimonial-btn" style="margin-top: 50px;">
+                <a href="testimonial.html"> Read More</a>
             </div>
         </div>
     </section>
@@ -342,11 +396,11 @@
 
                     <div class="footer-list">
                         <ul>
-                            <li>Other Service</li>
-                            <li><a href="#">Carrer</a></li>
-                            <li><a href="#">Ponit Plus</a></li>
-                            <li><a href="#">Partners</a></li>
-                            <li><a href="#">List My Hotels</a></li>
+                            <li>Contact Us</li>
+                            <li><input type="email" placeholder="Email..."></li>
+                            <li><input type="text" placeholder="Phone Number"></li>
+                            <li><textarea name="" placeholder="Message"></textarea></li>
+                            <li><input type="button" value="Submit"></a></li>
                         </ul>
                     </div>
 
@@ -400,24 +454,51 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-        <script>
-            window.addEventListener('scroll', function() {
-                var navbar = document.querySelector('.navbar');
-                if (window.scrollY > 50) { // Adjust 50 as needed, it represents the scroll offset
-                    navbar.classList.add('navbar-scrolled');
-                    document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
-                        link.style.color = 'black';
-                    });
-                } else {
-                    navbar.classList.remove('navbar-scrolled');
-                    document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
-                        link.style.color = 'white';
-                    });
-                }
-            });
-        </script>
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <a class="navbar-brand me-auto" href="#"><img id="logo" src="Assets\Images\logo.png" alt="logo"></a>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+   <script>
+    // JavaScript for navbar functionality
+    window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
+        const logo = document.querySelector('.navbar-brand img');
+        const toggleIcon = document.querySelector('.navbar-toggler-icon');
+        const contactButton = document.querySelector('.contact-search button');
+
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+            logo.classList.add('scrolled-logo');
+            toggleIcon.classList.add('scrolled-icon');
+            contactButton.classList.add('scrolled-button');
+        } else {
+            navbar.classList.remove('scrolled');
+            logo.classList.remove('scrolled-logo');
+            toggleIcon.classList.remove('scrolled-icon');
+            contactButton.classList.remove('scrolled-button');
+        }
+    });
+</script>
+    
 
     <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                        var openContactBtn = document.getElementById("openContact");
+                        var contactOverlay = document.getElementById("contactOverlay");
+                        var submitContactBtn = document.getElementById("submitContact");
+
+                        openContactBtn.addEventListener("click", function () {
+                            contactOverlay.style.display = "block";
+                        });
+
+                        submitContactBtn.addEventListener("click", function () {
+                            contactOverlay.style.display = "none";
+                        });
+                        
+                    });
 
 
     </script>

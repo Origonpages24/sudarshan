@@ -47,27 +47,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const counters = document.querySelectorAll('.number-view h1');
+function countUp(element) {
+    const end = parseInt(element.getAttribute('data-number'), 10);
+    if (isNaN(end)) return;
 
-    counters.forEach(counter => {
-        const updateCount = () => {
-            const target = +counter.getAttribute('style').match(/--number:\s*(\d+);/)[1];
-            const count = +counter.innerText;
+    let current = 0;
+    const duration = 2000; // 2 seconds
+    const stepTime = Math.abs(Math.floor(duration / end));
 
-            const speed = 200; // Change this to adjust the speed of the counter
-            const increment = target / speed;
+    const timer = setInterval(() => {
+        current += 1;
+        element.textContent = current;
+        if (current === end) {
+            clearInterval(timer);
+        }
+    }, stepTime);
+}
 
-            if (count < target) {
-                counter.innerText = Math.ceil(count + increment);
-                setTimeout(updateCount, 1);
-            } else {
-                counter.innerText = target;
-            }
-        };
-
-        counter.innerText = '0';
-        counter.style.opacity = '1';
-        updateCount();
-    });
+document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.number-view .col h1');
+    counters.forEach(countUp);
 });

@@ -430,23 +430,7 @@
     margin: 0;
     font-size: 36px;
     text-align: center;
-    animation: countUp 2s forwards;
-}
-.number-view h1 {
-    font-size: 2rem;
-    animation: countUp 2s forwards;
-    opacity: 0;
-}
 
-@keyframes countUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 
@@ -459,8 +443,18 @@
 }
 
 .number-view .col h1::after {
-    content: counter(count);
-    font-size: 36px;
+    content: attr(data-number);
+    counter-reset: number;
+    animation: count 2s ease-in-out;
+}
+
+@keyframes count {
+    from {
+        counter-increment: number 0;
+    }
+    to {
+        counter-increment: number var(--number);
+    }
 }
 
 @media (max-width:470px) {
@@ -928,15 +922,12 @@
 .footer-list h4 {
     font-size: 18px;
     font-weight: 600;
-    color: white;
+    color: var(--primary-color);
     text-align: left;
     font-family: pr;
 }
 
-.footer-list input {
-    font-size: 15px;
-    font-family: pr;
-}
+
 
 .footer-list ul {
     list-style: none;
@@ -946,7 +937,7 @@
 .footer-list li {
     padding: 6px;
     text-align: left;
-    color: white;
+    color: var(--secondary-color);
     font-size: 17px;
     font-family: pr;
 }

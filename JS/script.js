@@ -47,24 +47,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-function countUp(element) {
-    const end = parseInt(element.getAttribute('data-number'), 10);
-    if (isNaN(end)) return;
 
-    let current = 0;
-    const duration = 2000; // 2 seconds
-    const stepTime = Math.abs(Math.floor(duration / end));
+document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
 
-    const timer = setInterval(() => {
-        current += 1;
-        element.textContent = current;
-        if (current === end) {
-            clearInterval(timer);
-        }
-    }, stepTime);
-}
+    counters.forEach(counter => {
+        const updateCounter = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
 
-document.addEventListener('DOMContentLoaded', () => {
-    const counters = document.querySelectorAll('.number-view .col h1');
-    counters.forEach(countUp);
+            const increment = target / 200; // Adjust the division for speed of count
+
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCounter, 1); // Update the count every millisecond
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        updateCounter();
+    });
 });
+
+// light box
+

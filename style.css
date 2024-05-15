@@ -1451,6 +1451,7 @@
 
 .gallery-navbar {
     display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
 }
 
@@ -1528,7 +1529,7 @@
     }
 
     .gallery-navbar .gallery-navlist {
-        font-size: 12px;
+        font-size: 14px;
         padding: 10px;
     }
     .gallery-navbar .gallery-navlist{

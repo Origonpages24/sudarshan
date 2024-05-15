@@ -15,86 +15,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container navbar-elements">
-            <a class="navbar-brand me-auto scrolled-logo" href="#"><img src="Assets\Images\logo.png" alt="logo"></a>
-            <a class="navbar-brand me-auto default-logo" href="#"><img src="Assets\Images\logowhite.png" alt="logo"></a>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> <a class="navbar-brand me-auto" href="#"><img
-                                src="Assets\Images\logo.png" alt="logo"></a></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aboutus.html">About Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="service.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Service
-                            </a>
-                            <ul class="dropdown-menu service-list">
-                                <li><a class="dropdown-item" href="service.html">International & Domestic Packages</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Honeymoon Packages</a></li>
-
-                                <li><a class="dropdown-item" href="#">Pilgrimage Packages</a></li>
-                                <li><a class="dropdown-item" href="#">Destination Wedding Packages</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="testimonial.html">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-
-                            <a class="nav-link" href="gallery.html">Gallery</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-            <!-- Button to trigger the modal -->
-            <div class="contact-search">
-                <button type="button" id="openContact">Contact Us</button>
-            </div>
-            <div class="contact-overlay" id="contactOverlay">
-                <div class="contact-overlay-content">
-                    <div class="contact-overlay-header">
-                        <h4>Contact Us</h4>
-                    </div>
-                    <div class="contact-overlay-form">
-                        <input type="email" name="" placeholder="Enter Email" id="">
-                        <br><br>
-                        <input type="text" placeholder="Phone Number" id="">
-                        <br>
-                        <br>
-                        <textarea name="" id="" cols="23" rows="5" placeholder="Message"></textarea>
-                        <br> <br>
-                        <input type="button" style="background-color: var(--primary-color);
-                                    font-size: 15px;
-                                    color: white;
-                                    border: none;
-                                    outline: none;
-                                    width: 100px;
-                                    text-align: center;
-                                    " value="Submit" id="submitContact">
-                    </div>
-                </div>
-            </div>
-
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
+   <?php
+    include 'navbar.php';
+   ?>
     <!-- ending nav -->
 
     <!-- banner  -->
@@ -428,71 +351,9 @@
     </section>
 
     <!-- footer -->
-    <section class="footer" id="footer">
-        <div class="footer-container">
-            <div class="footer-main">
-                <div class="footer-items container">
-                    <div class="footer-logo">
-                        <img src="Assets\Images\logo.png" alt="">
-                    </div>
-                    <div class="footer-list">
-                        <ul>
-                            <li>Menu</li>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="aboutus.html">About Us</a></li>
-                            <li><a href="service.html">Service</a></li>
-                            <li><a href="testimonial.html">Testimonial</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="#footer">Contact Us</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-list">
-                        <ul>
-                            <li>Contact Us</li>
-                            <li><input type="email" required placeholder="Email..."></li>
-                            <li><input type="text" required placeholder="Phone Number"></li>
-                            <li><textarea name="" placeholder="Message"></textarea></li>
-                            <li><button>Submit</button></li>
-                        </ul>
-                    </div>
-
-
-                    <div class="footer-list">
-                        <ul>
-                            <li>Address</li>
-                            <li style="font-size: 12px; font-weight: 500; color: white;">
-                                <p>Naga Arjuna Pearl Bay, Puthiya Road, Cheriya kadavanthra, Kochi, Ernakulam, Kerala
-                                    682020</p>
-                            </li>
-                            <li><iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15719.020662814175!2d76.30509420000001!3d9.954317199999997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0873844635337f%3A0xb30f617f7793bd41!2sSudarshan%20Holidays!5e0!3m2!1sen!2sin!4v1715680959591!5m2!1sen!2sin"
-                                    width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe></li>
-                        </ul>
-
-                    </div>
-
-
-
-                </div>
-                <div class="footer-bottom container">
-                    <p><i class="bi bi-c-circle"></i>2024 All rights reserved to Saaradhi Holidays.</p>
-                    <div class="footer-list">
-                        <ul>
-                            <li>
-                                <a href="#" class="social-links"><i class="bi bi-instagram"></i></a>
-                                <a href="#" class="social-links"><i class="bi bi-facebook"></i></a>
-                                <a href="#" class="social-links"><i class="bi bi-twitter"></i></a>
-                                <a href="#" class="social-links"><i class="bi bi-whatsapp"></i></a>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <?php
+    include 'footer.php';
+  ?>
 
     <!-- SCRIPTING-->
     <script src="JS\script.js"></script>

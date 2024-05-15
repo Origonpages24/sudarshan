@@ -90,7 +90,15 @@
     color: #1e1e1e !important;
 }
 
+.contact-search i{
+    font-size: 16px;
+    font-weight: 500;
+}
 .contact-search button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     background-color: transparent;
     color: white;
     border: 1px solid transparent;
@@ -106,7 +114,6 @@
 .service-list li a {
     font-family: pr;
     font-size: 16px;
-
 }
 
 .contact-search button {
@@ -116,8 +123,8 @@
     text-decoration: none;
     font-family: cdm;
     border: none;
-    font-size: 16px;
-    padding: 8px 25px;
+    font-size: 17px;
+    padding: 6px 20px;
 }
 
 
@@ -1451,6 +1458,8 @@
 
 .gallery-navbar {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     overflow: hidden;
 }
@@ -1475,6 +1484,8 @@
 
 .gallery-images-flex-box {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -1498,6 +1509,11 @@
     transition: .4s;
 }
 
+.honeymoon-container, .pilgrimage-container, .destination-wedding-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .destination-wedding-container,
 .pilgrimage-container,
 .honeymoon-container {

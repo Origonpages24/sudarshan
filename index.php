@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE .php>
 
 <head>
     <meta charset="UTF-8">
@@ -9,8 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Assets\Images\logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <title>SUDARSHAN | Explore Beyond Borders: Your Passport to Adventure!</title>
+
+
 
 </head>
 
@@ -44,7 +44,7 @@
                         cultural immersion, or a destination wedding of your dreams we're here to turn your aspirations
                         into reality.
                     </p>
-                    <a href="aboutus.html" class="btn">Read More</a>
+                    <a href="aboutus.php" class="btn">Read More</a>
                 </div>
             </div>
             <div class="carousel-item">
@@ -57,7 +57,7 @@
                         crafted itineraries cater to every traveller's desires, ensuring a seamless and unforgettable
                         experience from start to finish.
                     </p>
-                    <a href="aboutus.html" class="btn">Read More</a>
+                    <a href="aboutu.php" class="btn">Read More</a>
                 </div>
             </div>
             <div class="carousel-item">
@@ -71,7 +71,7 @@
                         excellence means you can expect nothing less than impeccable service, attention to detail, and
                         unwavering support throughout your journey.
                     </p>
-                    <a href="aboutus.html" class="btn">Read More</a>
+                    <a href="aboutus..php" class="btn">Read More</a>
                 </div>
             </div>
 
@@ -86,7 +86,7 @@
                         Sudarshan Holidays.
 
                     </p>
-                    <a href="aboutus.html" class="btn">Read More</a>
+                    <a href="aboutus.php" class="btn">Read More</a>
                 </div>
             </div>
         </div>
@@ -154,7 +154,7 @@
                             for you and your partner. Experience the spiritual essence with our pilgrimages, offering a
                             transformative journey
                         </p>
-                        <a href="aboutus.html" class="about-btn btn">Read More</a>
+                        <a href="aboutus..php" class="about-btn btn">Read More <i class="bi bi-arrow-right" style="padding-left:8px"></i></a>
                     </div>
                 </div>
 
@@ -212,11 +212,10 @@
                     </div>
                 </div>
 
-
             </div>
         </div>
         <div class="service-card-btn">
-            <a href="">View More</a>
+            <a href="">View More <i class="bi bi-arrow-right" style="padding-left:8px"></i></a>
         </div>
     </div>
 
@@ -233,30 +232,26 @@
             </div>
             <div class="item2">
                 <div class="row">
-                    <div class="col box">
+                    <div class="col col-mb-4 box">
                         <img src="Assets\Images/destinationwedding(2).jpg" alt="">
                     </div>
-                    <div class="col box" >
+                    <div class="col col-mb-4 box" >
                         <img src="Assets\Images\pilgrim.jpg" alt="">
                     </div>
                 </div>
                 <div class="row row-2">
-                    <div class="col box" >
+                    <div class="col col-mb-4 box" >
                         <img src="Assets\Images\paris.jpg" alt="">
                     </div>
-                    <div class="col box" >
+                    <div class="col col-mb-4 box" >
                         <img src="Assets\Images\kashmirad.jpg" alt="">
                     </div>
                 </div>
             </div>
-            <!-- <div class="item3" >
-                <img src="Assets\Images\destinationwedding(2).jpg" alt="">
-            </div> -->
-
         </div>
-        <div class="gallery-btn ">
-            <a href="gallery.html">View More <i class="bi bi-caret-right"></i></a>
-        </div>
+    <div class="gallery-btn">
+        <a href="gallery.php">View More <i class="bi bi-arrow-right" style="padding-left:8px"></i></a>
+    </div>
     </section>
     <!-- gallery ending -->
 
@@ -269,83 +264,65 @@
             </div>
 
             <div class="container testimonial-cards">
-                <div class="row testimonial-card-wrapper " style="margin: auto;">
-                    <div class="col">
-
-                        <div class="card" style="width: 20rem;">
-                            <div class="card-profile">
-                                <img src="Assets\Images\client1saju.jpeg" alt="clent_1">
-                            </div>
-                            <div class="card-details">
-
-                                <h6 class="card-subtitle mb-2 text-muted">Saju K.P</h6>
-                                <p class="card-text">"I can't thank Sudarshan Holidays enough for the incredible journey
-                                    they provided. From the breathtaking landscapes to the immersive cultural
-                                    experiences, every aspect of our trip was carefully curated to perfection. Their
-                                    passion for travel shines through in everything they do, and I'm already planning my
-                                    next adventure with Sudarshan Holidays!"</p>
-
-                            </div>
-                            <div class="review-star">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 20rem;">
-                            <div class="card-profile">
-                                <img src="Assets\Images\client3Anusree.jpg" alt="">
-                            </div>
-                            <div class="card-details">
-
-                                <h6 class="card-subtitle mb-2 text-muted">Anusree Dinesh</h6>
-                                <p class="card-text">"Sudarshan Holidays exceeded all of our expectations! From the
-                                    moment we arrived, we were greeted with warmth and hospitality. Their knowledgeable
-                                    guides provided fascinating insights into each destination, and the seamless
-                                    logistics made our trip stress-free. Without a doubt, Sudarshan Holidays is the only
-                                    company I'll trust with my travel plans."</p>
-
-                            </div>
-                            <div class="review-star">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 20rem;">
-                            <div class="card-profile">
-                                <img src="Assets\Images/client2Venkatesh.jpeg" alt="">
-                            </div>
-                            <div class="card-details">
-
-                                <h6 class="card-subtitle mb-2 text-muted">Venkatesh Thyagarajan</h6>
-                                <p class="card-text">"Sudarshan Holidays truly made our vacation unforgettable! Every
-                                    detail was meticulously planned from the seamless booking process to the expertly
-                                    crafted itinerary. Their personalised approach ensured that our trip exceeded all
-                                    expectations. We can't wait to book our next adventure with Sudarshan Holidays!"</p>
-
-                            </div>
-                            <div class="review-star">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card">
+                <div class="card-profile">
+                    <img src="Assets/Images/client1saju.jpeg" alt="clent_1">
+                </div>
+                <div class="card-details">
+                    <h6 class="card-subtitle mb-2 text-muted">Saju K.P</h6>
+                    <p class="card-text">"I can't thank Sudarshan Holidays enough for the incredible journey they provided. From the breathtaking landscapes to the immersive cultural experiences, every aspect of our trip was carefully curated to perfection. Their passion for travel shines through in everything they do, and I'm already planning my next adventure with Sudarshan Holidays!"</p>
+                </div>
+                <div class="review-star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
                 </div>
             </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-profile">
+                    <img src="Assets/Images/client3Anusree.jpg" alt="">
+                </div>
+                <div class="card-details">
+                    <h6 class="card-subtitle mb-2 text-muted">Anusree Dinesh</h6>
+                    <p class="card-text">"Sudarshan Holidays exceeded all of our expectations! From the moment we arrived, we were greeted with warmth and hospitality. Their knowledgeable guides provided fascinating insights into each destination, and the seamless logistics made our trip stress-free. Without a doubt, Sudarshan Holidays is the only company I'll trust with my travel plans."</p>
+                </div>
+                <div class="review-star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-profile">
+                    <img src="Assets/Images/client2Venkatesh.jpeg" alt="">
+                </div>
+                <div class="card-details">
+                    <h6 class="card-subtitle mb-2 text-muted">Venkatesh Thyagarajan</h6>
+                    <p class="card-text">"Sudarshan Holidays truly made our vacation unforgettable! Every detail was meticulously planned from the seamless booking process to the expertly crafted itinerary. Their personalized approach ensured that our trip exceeded all expectations. We can't wait to book our next adventure with Sudarshan Holidays!"</p>
+                </div>
+                <div class="review-star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
             <div class="testimonial-btn" style="margin-top: 50px;">
-                <a href="testimonial.html"> Read More</a>
+                <a href="testimonial..php"> Read More <i class="bi bi-arrow-right" style="padding-left:8px"></i></a>
             </div>
         </div>
     </section>
@@ -353,16 +330,7 @@
     <!-- footer -->
   <?php
     include 'footer.php';
+    include 'footerscript.php';
   ?>
 
-    <!-- SCRIPTING-->
-    <script src="JS\script.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-
-</body>
-
-</html>
+   

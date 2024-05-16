@@ -70,5 +70,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// light box
+// Get the tab elements
+const tabs = document.querySelectorAll('.nav-link');
+
+// Add an event listener to each tab
+tabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+        // Get the target tab content
+        const targetId = this.getAttribute('data-bs-target');
+        const targetContent = document.querySelector(targetId);
+
+        // Show the target tab content and hide the others
+        document.querySelectorAll('.tab-content').forEach(content => {
+            content.style.display = 'none';
+        });
+        targetContent.style.display = 'block';
+    });
+});
+
 

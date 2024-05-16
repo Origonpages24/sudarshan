@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Assets\Images\logo.png" type="image/x-icon">
     <title>SUDARSHAN | Explore Beyond Borders: Your Passport to Adventure!</title>
@@ -74,39 +76,7 @@
         </div>
 
     <!-- footer -->
-
-        <?php
-            include 'footer.php'
-        ?>
-
-    <!-- scripting -->
-    <script src="JS\script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-    <script>
-        // JavaScript for navbar functionality
-        window.addEventListener('scroll', function () {
-            const navbar = document.querySelector('.navbar');
-            const logo = document.querySelector('.navbar-brand img');
-            const toggleIcon = document.querySelector('.navbar-toggler-icon');
-            const contactButton = document.querySelector('.contact-search button');
-
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-                logo.classList.add('scrolled-logo');
-                toggleIcon.classList.add('scrolled-icon');
-                contactButton.classList.add('scrolled-button');
-            } else {
-                navbar.classList.remove('scrolled');
-                logo.classList.remove('scrolled-logo');
-                toggleIcon.classList.remove('scrolled-icon');
-                contactButton.classList.remove('scrolled-button');
-            }
-        });
-    </script>
-
-</body>
-
-</html>
+    <?php
+    include 'footer.php';
+    include 'footerscript.php';
+  ?>
